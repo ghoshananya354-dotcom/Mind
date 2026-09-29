@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Profile | MindSprout</title>
+<meta name="description" content="MindSprout — a safer first step toward better mental wellbeing.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">Mind<span>Sprout</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="companion.html">Companion</a>
+      <a href="journal.html">Journal</a>
+      <a href="mind-quest.html">MindQuest</a>
+      <a href="weather.html">Weather</a>
+      <a href="support.html">Support</a>
+      <a href="profile.html">Profile</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="page"><div class="container">
+<div class="page-title"><h1>Personalize Your MindSprout</h1><p class="lead">Set your preferences to ensure MindSprout adapts to your comfort level and communication style.</p></div>
+<form id="profileForm" class="card form-grid">
+<div><h3>Communication style*</h3><div class="option-row">
+<div class="option"><input id="short" name="communication" value="Short" type="radio"><label for="short">Short</label></div>
+<div class="option"><input id="normal" name="communication" value="Normal" type="radio"><label for="normal">Normal</label></div>
+<div class="option"><input id="deep" name="communication" value="Deep" type="radio"><label for="deep">Deep</label></div>
+<div class="option"><input id="unsure" name="communication" value="Unsure" type="radio"><label for="unsure">Unsure</label></div>
+</div></div>
+<div><h3>Comfort level*</h3><div class="option-row">
+<div class="option"><input id="low" name="comfort" value="Low" type="radio"><label for="low">Low</label></div>
+<div class="option"><input id="medium" name="comfort" value="Medium" type="radio"><label for="medium">Medium</label></div>
+<div class="option"><input id="high" name="comfort" value="High" type="radio"><label for="high">High</label></div>
+</div></div>
+<div><h3>Focus areas*</h3><div class="option-row">
+<div class="option"><input id="stress" name="focus" value="Stress" type="radio"><label for="stress">Stress</label></div>
+<div class="option"><input id="focus" name="focus" value="Focus" type="radio"><label for="focus">Focus</label></div>
+<div class="option"><input id="sleep" name="focus" value="Sleep" type="radio"><label for="sleep">Sleep</label></div>
+<div class="option"><input id="habits" name="focus" value="Habits" type="radio"><label for="habits">Habits</label></div>
+<div class="option"><input id="social" name="focus" value="Social" type="radio"><label for="social">Social</label></div>
+<div class="option"><input id="general" name="focus" value="General" type="radio"><label for="general">General</label></div>
+</div></div>
+<button class="btn" type="submit">Submit</button>
+</form>
+<div class="section"><div class="disclaimer"><h3>Privacy & Data</h3><p>We prioritize your safety and trust. MindSprout is designed to be a safe first layer of support. Your data is used solely to personalize your experience and track your wellbeing patterns. We never diagnose or replace professional care.</p><button class="btn secondary" type="button" onclick="localStorage.clear();alert('Local data cleared.')">Delete Data</button><p class="muted">For more information on how we handle your data, please visit our full privacy policy.</p></div></div>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 MindSprout. A safer first step toward better mental wellbeing.</span>
+    <span>Wellness support • Non-diagnostic • Human support when appropriate</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
